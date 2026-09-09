@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23091413'/%3E%3Cpath d='M8 16c4-7 12-7 16 0-4 7-12 7-16 0Z' fill='%2370e0ba'/%3E%3Ccircle cx='13' cy='14' r='1.5' fill='%23091413'/%3E%3C/svg%3E" type="image/svg+xml">
+    <title>Tank Studio · Privacy policy</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #f1f5f4;
+        --muted: #a8b9b8;
+        --faint: #78908e;
+        --bg: #091413;
+        --panel: #10201e;
+        --panel-strong: #142825;
+        --line: rgba(177, 219, 209, 0.15);
+        --accent: #70e0ba;
+        --accent-strong: #b1f3d9;
+        --max: 1120px;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 84% 0%, rgba(55, 128, 115, 0.18), transparent 34rem),
+          var(--bg);
+        font: 400 1rem/1.7 ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        text-rendering: optimizeLegibility;
+      }
+
+      a { color: var(--accent-strong); text-underline-offset: 0.18em; }
+      a:hover { color: #d0fbea; }
+      a:focus-visible, .button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+
+      .shell { width: min(calc(100% - 3rem), var(--max)); margin-inline: auto; }
+
+      .skip-link {
+        position: absolute;
+        left: 1rem;
+        top: -5rem;
+        z-index: 10;
+        padding: 0.65rem 0.9rem;
+        color: var(--bg);
+        background: var(--accent);
+        border-radius: 0.5rem;
+      }
+      .skip-link:focus { top: 1rem; }
+
+      .site-header { border-bottom: 1px solid var(--line); background: rgba(9, 20, 19, 0.78); }
+      .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 4.8rem; }
+      .brand { display: inline-flex; align-items: center; gap: 0.75rem; color: var(--ink); font-weight: 700; letter-spacing: -0.02em; text-decoration: none; }
+      .brand-mark { display: inline-flex; align-items: end; gap: 0.18rem; height: 1.25rem; }
+      .brand-mark span { display: block; width: 0.32rem; border-radius: 0.4rem; background: var(--accent); }
+      .brand-mark span:nth-child(1) { height: 0.65rem; opacity: 0.65; }
+      .brand-mark span:nth-child(2) { height: 1.15rem; }
+      .brand-mark span:nth-child(3) { height: 0.85rem; opacity: 0.8; }
+      .site-nav { display: flex; flex-wrap: wrap; justify-content: end; gap: 1.15rem; font-size: 0.9rem; }
+      .site-nav a { color: var(--muted); text-decoration: none; }
+      .site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent-strong); }
+
+      .eyebrow, .contents-label, .card-kicker {
+        margin: 0;
+        color: var(--accent);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        line-height: 1.4;
+        text-transform: uppercase;
+      }
+
+      h1, h2 { margin: 0; color: var(--ink); letter-spacing: -0.045em; line-height: 1.08; }
+      h1 { max-width: 15ch; font-size: clamp(2.6rem, 7vw, 5.6rem); }
+      h2 { font-size: clamp(1.35rem, 2vw, 1.9rem); }
+
+      .hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.7fr); align-items: center; gap: 4rem; min-height: 34rem; padding-block: 5rem; }
+      .hero-copy { max-width: 42rem; }
+      .hero h1 { margin-top: 1.15rem; }
+      .hero-lede { max-width: 38rem; margin: 1.6rem 0 0; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.3rem); }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; }
+      .button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.85rem; padding: 0.6rem 1rem; border: 1px solid var(--line); border-radius: 0.65rem; font-weight: 700; text-decoration: none; }
+      .button-primary { color: var(--bg); background: var(--accent); border-color: var(--accent); }
+      .button-primary:hover { color: var(--bg); background: #9aefd0; }
+      .button-secondary { color: var(--accent-strong); background: rgba(112, 224, 186, 0.06); }
+      .button-secondary:hover { background: rgba(112, 224, 186, 0.15); }
+
+      .hero-orbit { position: relative; aspect-ratio: 1; max-width: 21rem; margin-inline: auto; width: 100%; }
+      .orbit { position: absolute; inset: 10%; border: 1px solid rgba(112, 224, 186, 0.3); border-radius: 50%; transform: rotate(-22deg) skewX(-10deg); }
+      .orbit-one { inset: 8% 18%; }
+      .orbit-two { inset: 18% 8%; transform: rotate(34deg) skewX(-10deg); border-color: rgba(177, 243, 217, 0.18); }
+      .orbit-core { position: absolute; inset: 35%; display: grid; place-items: center; border: 1px solid rgba(177, 243, 217, 0.4); border-radius: 50%; box-shadow: 0 0 4rem rgba(112, 224, 186, 0.24); background: radial-gradient(circle at 35% 30%, #b1f3d9, #2e8d72 60%, #16392f); }
+      .orbit-core span { width: 24%; aspect-ratio: 1; border-radius: 50%; background: #e7fff6; box-shadow: 0 0 1.5rem #e7fff6; }
+
+      .documents { padding-block: 3rem 5rem; }
+      .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; }
+      .section-heading h2 { margin-top: 0.7rem; }
+      .document-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+      .document-card { display: flex; min-height: 20rem; flex-direction: column; padding: 1.45rem; border: 1px solid var(--line); border-radius: 1rem; background: linear-gradient(145deg, rgba(20, 40, 37, 0.94), rgba(16, 32, 30, 0.7)); }
+      .document-card h2 { margin-top: 1.1rem; }
+      .document-card h2 a { color: var(--ink); text-decoration: none; }
+      .document-card h2 a:hover { color: var(--accent-strong); }
+      .document-card > p:not(.card-kicker) { margin: 1rem 0 1.5rem; color: var(--muted); }
+      .card-link { margin-top: auto; font-size: 0.92rem; font-weight: 700; }
+
+      .contact-callout { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 5rem; padding: 2rem; border: 1px solid rgba(112, 224, 186, 0.25); border-radius: 1rem; background: rgba(112, 224, 186, 0.06); }
+      .contact-callout h2 { margin-top: 0.55rem; }
+
+      .page-intro { padding-block: 5.5rem 3.5rem; }
+      .page-intro h1 { max-width: 20ch; margin-top: 1rem; font-size: clamp(2.6rem, 6vw, 4.8rem); }
+      .updated { margin: 1.15rem 0 0; color: var(--faint); font-size: 0.92rem; }
+      .reading-shell { display: grid; grid-template-columns: 14rem minmax(0, 45rem); justify-content: space-between; gap: 4rem; padding-bottom: 6rem; }
+      .contents { align-self: start; position: sticky; top: 1.5rem; padding-block: 0.35rem; }
+      .contents ol { display: grid; gap: 0.7rem; margin: 1rem 0 0; padding-left: 1.3rem; color: var(--faint); font-size: 0.9rem; }
+      .contents a { color: var(--muted); }
+      .contents a:hover { color: var(--accent-strong); }
+      .policy-content { min-width: 0; }
+      .policy-section { padding-block: 0 3rem; }
+      .policy-section + .policy-section { padding-top: 3rem; border-top: 1px solid var(--line); }
+      .policy-section h2 { margin-bottom: 1.05rem; scroll-margin-top: 1.5rem; }
+      .policy-section p { margin: 0 0 1rem; color: var(--muted); }
+      .policy-section p:last-child { margin-bottom: 0; }
+      .policy-section ul { margin: 1.15rem 0 0; padding-left: 1.25rem; color: var(--muted); }
+      .related-links { margin-top: 0; }
+
+      .site-footer { border-top: 1px solid var(--line); }
+      .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: 1.4rem 2rem; color: var(--muted); font-size: 0.87rem; }
+      .footer-inner p { margin: 0; }
+      .footer-note { color: var(--faint); }
+
+      @media (max-width: 760px) {
+        .shell { width: min(calc(100% - 2rem), var(--max)); }
+        .header-inner { align-items: start; flex-direction: column; gap: 0.8rem; padding-block: 1.2rem; }
+        .site-nav { justify-content: start; gap: 0.8rem 1rem; }
+        .hero { grid-template-columns: 1fr; gap: 2rem; min-height: 0; padding-block: 4rem; }
+        .hero-orbit { max-width: 13rem; margin-right: 1rem; }
+        .document-grid { grid-template-columns: 1fr; }
+        .document-card { min-height: 0; }
+        .contact-callout { align-items: start; flex-direction: column; margin-bottom: 3rem; }
+        .page-intro { padding-block: 4rem 2.5rem; }
+        .reading-shell { display: block; padding-bottom: 4rem; }
+        .contents { position: static; margin-bottom: 3rem; padding: 1rem; border: 1px solid var(--line); border-radius: 0.75rem; background: rgba(16, 32, 30, 0.7); }
+        .contents ol { margin-bottom: 0; }
+        .footer-inner { align-items: start; flex-direction: column; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Tank Studio home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>Tank Studio</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="privacy.html" aria-current="page">Privacy</a>
+            <a href="support.html">Support</a>
+            <a href="beta.html">Beta</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-intro shell" aria-labelledby="page-title">
+        <p class="eyebrow">Tank Studio · information</p>
+        <h1 id="page-title">Privacy policy</h1>
+        <p class="updated">Updated September 6, 2026</p>
+      </section>
+      <div class="reading-shell shell">
+        <aside class="contents" aria-labelledby="contents-heading">
+          <p class="contents-label" id="contents-heading">On this page</p>
+          <ol>
+            <li><a href="#about-this-policy">About this policy</a></li>
+<li><a href="#your-tank-records">Your tank records</a></li>
+<li><a href="#photos-you-choose">Photos you choose</a></li>
+<li><a href="#reminders">Reminders</a></li>
+<li><a href="#sharing-and-outside-links">Sharing and outside links</a></li>
+<li><a href="#device-backups-and-deletion">Device backups and deletion</a></li>
+<li><a href="#testflight-and-support">TestFlight and support</a></li>
+<li><a href="#policy-updates">Policy updates</a></li>
+          </ol>
+        </aside>
+        <article class="policy-content">
+        <section class="policy-section" id="about-this-policy" aria-labelledby="about-this-policy-heading">
+          <h2 id="about-this-policy-heading">About this policy</h2>
+          <p>Tank Studio is provided by TheAvgDevs. This policy describes the current freshwater planning and care app, including its TestFlight beta. For privacy questions or requests, email TheAvgDevs@gmail.com.</p>
+        </section>
+        <section class="policy-section" id="your-tank-records" aria-labelledby="your-tank-records-heading">
+          <h2 id="your-tank-records-heading">Your tank records</h2>
+          <p>Tank names, plans, livestock, plants, equipment, appearance choices, routines, readings, care history, and journal notes and photos are saved in the app’s private storage on your device. Tank Studio does not send these records to a developer-operated server. No account is required. The app does not add a separate password or encryption layer for these records; use your device’s security settings and avoid storing secrets in notes.</p>
+          <p>The app does not include advertising, tracking, third-party analytics SDKs, location access, or an AI service that receives your records. We do not sell your personal information or use it for targeted advertising.</p>
+        </section>
+        <section class="policy-section" id="photos-you-choose" aria-labelledby="photos-you-choose-heading">
+          <h2 id="photos-you-choose-heading">Photos you choose</h2>
+          <p>The system photo picker gives Tank Studio the photos you select, rather than access to your whole library. Apple may need to download a selected photo from iCloud Photos. Tank Studio prepares a smaller JPEG copy for a journal entry; it does not modify or delete the original in Photos.</p>
+          <p>Journal images are not analyzed to identify animals, read test results, or diagnose problems. Photo contents may themselves contain personal information, so choose what you save carefully.</p>
+        </section>
+        <section class="policy-section" id="reminders" aria-labelledby="reminders-heading">
+          <h2 id="reminders-heading">Reminders</h2>
+          <p>Phone reminders are optional. If you enable them, iOS stores local notification requests based on your routines. Notifications can show your routine title, tank name, and a message that planned care is due on your lock screen, depending on your system settings. You can disable reminders in the app or change notification permissions and previews in Settings. No push-notification server is used.</p>
+        </section>
+        <section class="policy-section" id="sharing-and-outside-links" aria-labelledby="sharing-and-outside-links-heading">
+          <h2 id="sharing-and-outside-links-heading">Sharing and outside links</h2>
+          <p>Tank plan cards are shared only when you choose to use the system share sheet. Review the preview: a card can include the tank name and the plan details you select. Cards exclude care routines, readings, history, journal notes and photos, and equipment manufacturer, model, and notes. The receiving app or person controls any copy you send.</p>
+          <p>Opening a cited source, Apple information page, or email link takes you to an outside service. That service may receive ordinary connection information and follows its own privacy policy. Tank Studio does not attach your saved tank records to those links.</p>
+        </section>
+        <section class="policy-section" id="device-backups-and-deletion" aria-labelledby="device-backups-and-deletion-heading">
+          <h2 id="device-backups-and-deletion-heading">Device backups and deletion</h2>
+          <p>The app does not provide its own iCloud sync, account recovery, or general data export. iOS or computer backups may include app data depending on your settings. Backups are separate from app sync; restoring a particular tank or photo is not guaranteed by Tank Studio.</p>
+          <p>You can edit or delete journal entries and remove their attached copies in the app. Removing an attachment does not delete the original in Photos. Archiving a tank preserves its records; it is not deletion. Managed tanks and immutable care history do not have an individual permanent-delete control in this beta.</p>
+          <p>Deleting Tank Studio from your device removes its local app data; offloading the app preserves data. Do not delete the app to troubleshoot a saved-data error. Copies in device backups, Photos, or apps you shared to must be managed separately through those services. We cannot retrieve or remotely erase records held only on your device.</p>
+        </section>
+        <section class="policy-section" id="testflight-and-support" aria-labelledby="testflight-and-support-heading">
+          <h2 id="testflight-and-support-heading">TestFlight and support</h2>
+          <p>When you use TestFlight, Apple automatically collects beta-testing activity and crash information and shares it with the developer. Apple also shares feedback you submit. We use this information to investigate issues and improve Tank Studio, and do not share TestFlight information with third parties. Feedback may include screenshots, comments, contact information, and device or app details. Public-link invitations do not reveal your name or email to us unless you provide contact information with feedback. This is separate from Tank Studio’s local tank storage and is governed by Apple’s TestFlight terms and privacy information.</p>
+          <p>If you email support or submit feedback, we receive what you choose to send and use it to answer you, investigate problems, and improve the app. Email is handled through Gmail. Avoid sending private journal material unless you want it included in your request. We do not automatically attach tank records, photos, or logs to support emails.</p>
+          <p>We retain support correspondence and feedback only as needed to handle the request, investigate related issues, and meet applicable obligations. You can request deletion of developer-held correspondence at TheAvgDevs@gmail.com. Information retained independently by Apple, Google, or a recipient is subject to that service’s controls and policies.</p>
+        </section>
+        <section class="policy-section" id="policy-updates" aria-labelledby="policy-updates-heading">
+          <h2 id="policy-updates-heading">Policy updates</h2>
+          <p>We will update this policy when the app’s practices change and show the revised date. Any future account, cloud, analytics, or commerce feature will need an updated disclosure before it is introduced.</p>
+        </section>
+        <section class="policy-section related-links" id="related-service-policies" aria-labelledby="related-service-policies-heading">
+          <h2 id="related-service-policies-heading">Related service policies</h2>
+          <p>Apple and Google operate services mentioned in this policy. Their own policies explain how those services handle information.</p>
+          <ul>
+            <li><a href="https://www.apple.com/legal/privacy/data/en/test-flight/" rel="noopener noreferrer">Apple TestFlight privacy information</a></li>
+            <li><a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google privacy policy</a></li>
+          </ul>
+        </section>
+        </article>
+      </div>
+    </main>
+<footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <p>Questions or corrections? <a href="mailto:TheAvgDevs@gmail.com">TheAvgDevs@gmail.com</a></p>
+          <p class="footer-note">Website hosting: These public pages are served by GitHub Pages. GitHub may receive standard web-request information when you visit them. This note covers this website only; the app policy above is generated from Tank Studio’s offline policy source.</p>
+        </div>
+        <p class="footer-note">Tank Studio · Updated September 6, 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>
